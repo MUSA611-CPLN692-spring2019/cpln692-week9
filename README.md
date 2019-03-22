@@ -17,6 +17,9 @@ There are two ways to submit the midterm:
 
 Mapbox's [Bob Lannon](https://www.mapbox.com/about/team/bob-lannon/) will walk us through examples using [Mapbox gl js](https://docs.mapbox.com/mapbox-gl-js/examples/).
 
+[lab link](https://docs.mapbox.com/help/tutorials/choropleth-studio-gl-pt-1/)
+
+
 
 ### Remainder of the course direction discussion
 
