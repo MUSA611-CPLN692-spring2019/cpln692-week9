@@ -6,7 +6,7 @@
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css' rel='stylesheet' />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
     <style>
 
@@ -31,27 +31,18 @@
     <input id='satellite-v9' type='radio' name='rtoggle' value='satellite'>
     <label for='satellite'>satellite</label>
 </div>
-<script>
-mapboxgl.accessToken = 'pk.eyJ1Ijoicm9zc2Jlcm5ldCIsImEiOiJRLTh3WEVNIn0.7S-AEC6jsZUhih6bsJ39nA';
-var map = new mapboxgl.Map({
-    container: 'map',
-    style: 'mapbox://styles/mapbox/streets-v11',
-    zoom: 13,
-    center: [4.899, 52.372]
-});
 
-var layerList = document.getElementById('menu');
-var inputs = layerList.getElementsByTagName('input');
+<div class="sidebar">
+  <div id="intro">
+    <h1>A nice familiar sidebar</h1>
 
-function switchLayer(layer) {
-    var layerId = layer.target.id;
-    map.setStyle('mapbox://styles/mapbox/' + layerId);
-}
 
-for (var i = 0; i < inputs.length; i++) {
-    inputs[i].onclick = switchLayer;
-}
-</script>
+  </div>
+
+
+
+<!-- Javascript imports -->
+<script src='js/main.js'></script>
 
 </body>
 </html>
