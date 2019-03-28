@@ -32,3 +32,8 @@ Mapbox's [Bob Lannon](https://www.mapbox.com/about/team/bob-lannon/) will walk u
    - Create an `index.html` file and separate `.js` and `css` files.
 - Publish them through github pages
 - Include the links to the live examples in your pull request.
+
+## Homework Assignment -- Heatmap example and Custom Style example
+- Changed color for earthquake heatmap
+- Added three markers for custom style example
+- Changed map views
