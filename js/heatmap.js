@@ -2,8 +2,8 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiYXN0b3JpYSIsImEiOiJjanRrZndldnIwYXNyNDNrNjJ5M
 var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/dark-v10',
-    center: [-120, 50],
-    zoom: 2
+    center: [108.099484, 33.635986],
+    zoom: 3
 });
 
 map.on('load', function() {
@@ -45,11 +45,11 @@ map.on('load', function() {
                 ["linear"],
                 ["heatmap-density"],
                 0, "rgba(33,102,172,0)",
-                0.2, "rgb(103,169,207)",
-                0.4, "rgb(209,229,240)",
-                0.6, "rgb(253,219,199)",
-                0.8, "rgb(239,138,98)",
-                1, "rgb(178,24,43)"
+                0.2, "hsl(0, 100%, 90%)",
+                0.4, "hsl(0, 100%, 70%)",
+                0.6, "hsl(0, 100%, 50%)",
+                0.8, "hsl(0, 100%, 30%)",
+                1, "hsl(0, 100%, 10%)"
             ],
             // Adjust the heatmap radius by zoom level
             "heatmap-radius": [
@@ -74,14 +74,14 @@ map.on('load', function() {
         "id": "earthquakes-point",
         "type": "circle",
         "source": "earthquakes",
-        "minzoom": 7,
+        "minzoom": 6,
         "paint": {
             // Size circle radius by earthquake magnitude and zoom level
             "circle-radius": [
                 "interpolate",
                 ["linear"],
                 ["zoom"],
-                7, [
+                6, [
                     "interpolate",
                     ["linear"],
                     ["get", "mag"],
@@ -101,12 +101,12 @@ map.on('load', function() {
                 "interpolate",
                 ["linear"],
                 ["get", "mag"],
-                1, "rgba(33,102,172,0)",
-                2, "rgb(103,169,207)",
-                3, "rgb(209,229,240)",
-                4, "rgb(253,219,199)",
-                5, "rgb(239,138,98)",
-                6, "rgb(178,24,43)"
+                1, "rgb(236, 201, 239)",
+                2, "rgb(226, 167, 232)",
+                3, "rgb(192, 96, 201)",
+                4, "rgb(182, 56, 193)",
+                5, "rgb(149, 22, 160)",
+                6, "rgb(120, 10, 130)"
             ],
             "circle-stroke-color": "white",
             "circle-stroke-width": 1,
