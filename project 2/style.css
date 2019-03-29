@@ -1,0 +1,31 @@
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+#btn1 {
+  content: '';
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  height: 40px;
+  background: linear-gradient(135deg, #ccb3ff, #b3d9ff);
+  border-radius: 4px;
+  transition: box-shadow .5s ease, transform .2s ease;
+  will-change: transform;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+  transform:
+    translateY(var(--ty, 0))
+    rotateX(var(--rx, 0))
+    rotateY(var(--ry, 0))
+    translateZ(var(--tz, -12px));
+  z-index:5
+}
