@@ -1,0 +1,21 @@
+body { margin:0; padding:0; display:flex }
+#map1 { position:absolute; top:0; bottom:0; left:0; right:50%; }
+#map2 { position:absolute; top:0; bottom:0; left:50%; right:0; }
+/* #map1 .mapboxgl-ctrl-geocoder {display:none;} */
+.mapboxgl-ctrl-geocoder.mapboxgl-ctrl {
+  position:fixed;
+  margin: 0 0 0 -120px;
+  top:10px;
+  width: 240px;
+}
+
+@media (orientation:portrait) {
+  #map1 { bottom:50%; right:0; }
+  #map2 { top:50%; left:0; }
+  .mapboxgl-ctrl-geocoder.mapboxgl-ctrl {
+    position:fixed;
+    top:50%; left:50%;
+    margin: -20px 0 0 -120px;
+    width:240px;
+  }
+}
