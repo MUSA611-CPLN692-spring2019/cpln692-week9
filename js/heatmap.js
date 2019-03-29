@@ -13,7 +13,7 @@ map.on('load', function() {
         "type": "geojson",
         "data": "https://docs.mapbox.com/mapbox-gl-js/assets/earthquakes.geojson"
     });
-
+    alert("This is a map shows earthquake clusters in worldwide. Zoom in to see details.");
     map.addLayer({
         "id": "earthquakes-heat",
         "type": "heatmap",
