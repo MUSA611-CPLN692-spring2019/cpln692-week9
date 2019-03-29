@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset='utf-8' />
-    <title>Display a map</title>
+    <title>Display a map 1</title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css' rel='stylesheet' />
@@ -11,18 +11,27 @@
         #map { position:absolute; top:0; bottom:0; width:100%; }
     </style>
 </head>
+
+
 <body>
+  <link rel="stylesheet" href="css/css1.css" />
 
-<div id='map'></div>
-<script>
-mapboxgl.accessToken = 'pk.eyJ1IjoiYWxleDBlYXN5IiwiYSI6ImNqdGtmM3p0aDBjMjk0NHVvZHlwa29mdnYifQ.7V5_Hbxoh4KWZElnFQFrxA';
-var map = new mapboxgl.Map({
-    container: 'map', // container id
-    style: 'mapbox://styles/mapbox/streets-v11', // stylesheet location
-    center: [-74.50, 40], // starting position [lng, lat]
-    zoom: 9 // starting zoom
-});
-</script>
 
+
+  <div id="sidebar">
+    Take me to: <br>
+      <button id="ny">New York</button>
+      <button id="philly">Philadelphia</button>
+  </div>
+
+  <div id='map'></div>
+
+
+
+<script src="js/jquery-2.2.0.js"></script>
+<script src="js/leaflet.js"></script>
+<script src="js/underscore.js"></script>
+
+<script src='js/js1.js'></script>
 </body>
 </html>
