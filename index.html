@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- CSS Imports -->
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.css" integrity="sha256-YR4HrDE479EpYZgeTkQfgVJq08+277UXxMLbi/YP69o=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<head>
+  <div class="sidebar">
+    <div id="intro">
+      <h2>Philadelphia</h2>
+      <div style="clear:both"></div>
+    </div>
+  </div>
+</head>
+<head>
+    <meta charset='utf-8' />
+    <title>Display a map</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        body { margin:0; padding:0; }
+        #map { position:absolute; top:0; bottom:0; left: 38%;width:80%; }
+    </style>
+</head>
+<body>
+<div id='map'></div>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoibHVmZW5nbGluIiwiYSI6ImNqcGE0eWdxdTFtZmUzcHFzcTV6OW40cHIifQ.JZFzns7G90tC3m6AgYzi7w';
+var map = new mapboxgl.Map({
+    container: 'map', // container id
+    style: 'mapbox://styles/mapbox/streets-v11', // stylesheet location
+    center: [-75.08, 39.97], // starting position [lng, lat]
+    zoom: 11 // starting zoom
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.js" integrity="sha256-6BZRSENq3kxI4YYBDqJ23xg0r1GwTHEpvp3okdaIqBw=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore.js" integrity="sha256-O4179En8zabOlPYBNvGp8cF0uh0vnSZpW4Q6Ul1h+8c=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
