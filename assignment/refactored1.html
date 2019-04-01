@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8' />
+    <title>Display HTML clusters with custom properties</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel = stylesheet type="text/css" href="css/style.css">
+  </head>
+  <body>
+
+    <div class = 'sidebar'>
+      <h1> Earthquake Locaitons </h1>
+      <p>Adjust the realtive size of clusters</p>
+      <input type = "range" min = "5" max = "500" value = "80" id = "sizeSlide">
+    </div>
+    <div id='map'></div>
+
+    <script src = 'js/main.js'></script>
+
+
+  </body>
+</html>

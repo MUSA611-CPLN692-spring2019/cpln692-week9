@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- CSS Imports -->
+    <link rel="stylesheet" href="style.css" />
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css' rel='stylesheet' />
+  </head>
+
+  <body>
+    <div id='map' class = "mapboxgl-map">
+
+
+    </div>
+
+    <div class='map-overlay' id='features'><h2>US population density</h2><div id='pd'><p>Hover over a state!</p></div></div>
+
+    <div class='map-overlay' id='legend'></div>
+    <script>
+      mapboxgl.access_token='pk.eyJ1IjoiZGdidWNrbGVyIiwiYSI6ImNqdGtlajExMTM5c2s0Ym8zdzI4eGFpZDcifQ.BWCDdvvWrI8f4hBHA2FR9g';
+
+      var map = new mapboxgl.Map({
+        container: 'map', // container id
+        style: 'https://api.mapbox.com/styles/v1/dgbuckler/cjtkfh3gl0laa1fry6v714sdb.html?fresh=true&title=true&access_token=pk.eyJ1IjoiZGdidWNrbGVyIiwiYSI6ImNqdGtlajExMTM5c2s0Ym8zdzI4eGFpZDcifQ.BWCDdvvWrI8f4hBHA2FR9g#5.8/34.128216/-109.907991/0'
+      });
+    </script>
+
+  </body>
+
+
+
+</html>
