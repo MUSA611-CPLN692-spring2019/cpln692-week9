@@ -1,34 +1,40 @@
 body {
-  margin:0; padding:0;
+  margin:0;
+  padding:0;
 }
-.sidebar {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 20%;
-  background-color: #0000e0;
-  color: #eeeeee;
-}
+
 
 #map {
   position:absolute;
   top:0;
   bottom:0;
-  width: 80%;
-  right: 0;
+  width:100%;
 }
 
 #fly {
-display: block;
-position: relative;
-margin: 0px auto;
-width: 50%;
-height: 40px;
-padding: 10px;
-border: none;
-border-radius: 3px;
-font-size: 12px;
-text-align: center;
-color: #fff;
-background: #ee8a65;
+  display: block;
+  position: relative;
+  margin: 0px auto;
+  width: 50%;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  font-size: 12px;
+  text-align: center;
+  color: #fff;
+  background: #ee8a65;
+}
+
+#cntrl {
+  display: block;
+  position: absolute;
+  bottom: 10px;
+  height: 75px;
+  left: 20px;
+  border: #000000;
+  border-radius: 5px;
+  background-color: #ee8a65;
+  color: #fff;
+
 }
