@@ -34,3 +34,6 @@ Mapbox's [Bob Lannon](https://www.mapbox.com/about/team/bob-lannon/) will walk u
    - Create an `index.html` file and separate `.js` and `css` files.
 - Publish them through github pages
 - Include the links to the live examples in your pull request.
+
+Page 1:https://zxuanxu.github.io/week9_1/
+Page 2:https://zxuanxu.github.io/week9_2/
