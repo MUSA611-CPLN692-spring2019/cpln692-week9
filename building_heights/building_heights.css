@@ -1,0 +1,17 @@
+#map { position:absolute;
+       top:60px;
+       bottom:0;
+       width:100%; }
+
+body {
+    margin:0;
+    padding: 0;
+    overflow: hidden;
+    font-family: helvetica, arial, sans-serif;
+}
+
+.topbar {
+        top: 40px;
+        bottom: 40px;
+        overflow: hidden;
+}
