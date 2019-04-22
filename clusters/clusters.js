@@ -11,10 +11,10 @@ map.on('load', function() {
     // Add a new source from our GeoJSON data and set the
     // 'cluster' option to true. GL-JS will add the point_count property to your source data.
     map.addSource("phillyschools", {
-        type: "json",
+        type: "geojson",
         // Point to GeoJSON data. This example visualizes all M1.0+ earthquakes
         // from 12/22/15 to 1/21/16 as logged by USGS' Earthquake hazards program.
-        data: "https://raw.githubusercontent.com/angelicakim28/cpln692-week9/master/clusters/phillySchools.js",
+        data: "https://raw.githubusercontent.com/angelicakim28/cpln692-week9/master/clusters/phillySchools.geojson",
         cluster: true,
         clusterMaxZoom: 14, // Max zoom to cluster points on
         clusterRadius: 50 // Radius of each cluster when clustering points (defaults to 50)
@@ -34,11 +34,11 @@ map.on('load', function() {
             "circle-color": [
                 "step",
                 ["get", "point_count"],
-                "#51bbd6",
-                100,
-                "#f1f075",
-                750,
-                "#f28cb1"
+                "#3CAEA3",
+                5,
+                "#F6D55C",
+                10,
+                "#ED553B"
             ],
             "circle-radius": [
                 "step",
