@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8' />
+    <title>Map Style - Mapbox </title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css' rel='stylesheet' />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id='map'></div>
+    <div id='menu'>
+
+      <p class='title'> PICK A STYLE </p><br>
+
+
+      <label class="container">
+        <input id='satellite-v9' type='radio' name='rtoggle' value='satellite' zoom=16 checked='checked'>
+        <span class="checkmark"></span>SATELLITE
+      </label><br>
+
+      <label class="container">
+        <input id='streets-v11' type='radio' name='rtoggle' zoom=17 value='streets'>
+        <span class="checkmark"></span>STREETS
+      </label><br>
+
+      <label class="container">
+        <input id='light-v10' type='radio' name='rtoggle' zoom=15 value='light'>
+        <span class="checkmark"></span>LIGHT
+      </label><br>
+
+      <label class="container">
+        <input id='dark-v10' type='radio' name='rtoggle' zoom=15 value='dark'>
+        <span class="checkmark"></span>DARK
+      </label><br>
+
+      <label class="container">
+        <input id='outdoors-v11' type='radio' name='rtoggle' zoom=16 value='outdoors'>
+        <span class="checkmark"></span>OUTDOORS
+      </label><br>
+
+
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
